@@ -18,6 +18,9 @@ class matrix{
     void printMatrix();
     void EqMatrix(const matrix& other);
     void SumMatrix(const matrix& other);
+    void SubMatrix(const matrix& other);
+    void MulNumber(const double num);
+    void MulMatrix(const matrix& other);
 
 private:
 

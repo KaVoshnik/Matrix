@@ -139,7 +139,7 @@
         
     }
 
-    void SubMatrix(const matrix& other){
+    void matrix::SubMatrix(const matrix& other){
 
         if(rows != other.rows or cols != other.cols){
             throw("Error: Cannot sub it because matrix have different sizes!");
@@ -152,7 +152,7 @@
         }
     }
 
-    void MulNumber(const double num){
+    void matrix::MulNumber(const double num){
         for(int a = 0; a < cols; a++){
             for(int b = 0; b < rows; b++){
                 arr[a][b] *= num;
@@ -160,7 +160,7 @@
         }
     }
 
-    void MulMatrix(const matrix& other){
+    void matrix::MulMatrix(const matrix& other){
         if(rows != other.rows or cols != other.cols){
             throw("Error: Cannot exp it because matrix have different sizes!");
         }
